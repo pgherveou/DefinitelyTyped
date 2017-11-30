@@ -53,6 +53,11 @@ declare class ElectronConfig implements Iterable<[string, string | number | bool
     get(key: string): any;
 
     /**
+     * retrieves an item or get default value
+     */
+    get<T>(key: string, defaultValue: T): T;
+                                                 
+    /**
      * Checks if an item exists
      */
     has(key: string): boolean;
